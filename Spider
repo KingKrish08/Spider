@@ -1,0 +1,60 @@
+function setup() {
+  createCanvas(400, 400);
+  background(256, 128, 0);
+}
+
+function draw() {
+
+  //web
+  stroke(200, 200, 200)
+  line(200, 0, 200, 150)
+  stroke(0)
+
+  //face
+  fill(0)
+  circle(200, 190, 100)
+
+  //eyes
+  fill(256)
+  circle(185, 170, 20)
+  circle(215, 170, 20)
+
+  //mouth
+  angleMode(DEGREES)
+  arc(200, 210, 40, 40, 0, 180)
+  fill(0)
+  arc(200, 210, 15, 15, 0, 180)
+
+  //first left leg
+  strokeWeight(5)
+  line(100, 100, 175, 175)
+  line(100, 100, 50, 180)
+
+  //second left leg
+  line(110, 150, 160, 180)
+  line(110, 150, 50, 200)
+
+  //third left leg
+  line(100, 200, 150, 180)
+  line(100, 200, 25, 275)
+
+  //fourth left leg
+  line(160, 180, 110, 250)
+  line(110, 250, 175, 330)
+
+  //first right leg
+  line(225, 175,  300, 100)
+  line(300, 100, 350, 180)
+
+  //second right leg
+  line(310, 150, 240, 180)
+  line(310, 150, 350, 200)
+
+  //third right leg
+  line(300, 200, 250, 180)
+  line(300, 200, 375, 275)
+
+  //fourth right leg
+  line(240, 180, 290, 250)
+  line(290, 250, 225, 330)
+}
